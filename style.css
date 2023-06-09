@@ -1,0 +1,120 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: hsl(0, 100%, 74%) url("images/bg-intro-desktop.png");
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    max-width: 85%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: calc(100% - 2 * 47%);
+    align-items: center;
+}
+
+main h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+main .right,
+main .left {
+    width: 47%;
+}
+
+main .right .offer p {
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+main .right form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+main .right form input,
+main .button {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: 1px #ddd solid;
+    border-radius: 7px;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input>p {
+    text-align: end !important;
+    color: hsl(0, 100%, 74%) !important;
+    display: none;
+}
+
+.input img {
+    position: absolute;
+    top: 34%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.button {
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+main .right form input:focus {
+    border-color: #777;
+}
+
+main .right form p:last-child {
+    color: #000;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width:767px) {
+    main {
+        display: block;
+    }
+    main .left,
+    main .right {
+        width: 100%;
+    }
+    main h1,
+    p {
+        text-align: center;
+    }
+    footer {
+        display: none;
+    }
+}
